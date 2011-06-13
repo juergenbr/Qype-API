@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Qype_Test</display-name>
+  <welcome-file-list>
+    <welcome-file>Index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>SearchQype</display-name>
+    <servlet-name>SearchQype</servlet-name>
+    <servlet-class>servlets.SearchQype</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SearchQype</servlet-name>
+    <url-pattern>/SearchQype</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SearchNearby</display-name>
+    <servlet-name>SearchNearby</servlet-name>
+    <servlet-class>servlets.SearchNearby</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SearchNearby</servlet-name>
+    <url-pattern>/SearchNearby</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LoadReviews</display-name>
+    <servlet-name>LoadReviews</servlet-name>
+    <servlet-class>servlets.LoadReviews</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoadReviews</servlet-name>
+    <url-pattern>/LoadReviews</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DGCallServlet</display-name>
+    <servlet-name>DGCallServlet</servlet-name>
+    <servlet-class>servlets.DGCallServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DGCallServlet</servlet-name>
+    <url-pattern>/DGCallServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
